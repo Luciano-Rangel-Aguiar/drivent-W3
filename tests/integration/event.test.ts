@@ -9,6 +9,10 @@ beforeAll(async () => {
   await cleanDb();
 });
 
+afterAll(async () => {
+  await cleanDb();
+});
+
 const server = supertest(app);
 
 describe("GET /event", () => {
